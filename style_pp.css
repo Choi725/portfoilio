@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FEFEFF;
+    margin: 0px;
+}
+
+.frame{
+    margin: 30px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----navigator bar-----*/
+
+li{
+    display: inline;
+    align-self: center;
+    margin-left: 15px;
+}
+
+ul{
+    margin: 0;
+}
+
+.site-name{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #7774FF;
+    text-align: left;
+}
+
+.nav-menu{
+    font-family: "Pretendard", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #B0B0B5;
+    text-align: right;
+}
+
+.maintag{
+    color: #7774FF;
+    font-family: "Montserrat", sans-serif;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: #7774FF;
+    transition: 0.5s;
+}
+
+header{
+    height: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: #FEFEFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgba(176,176,181,0.1);
+    
+    width: 100%;
+    z-index: 1000;
+}
+
+.navigator{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    margin: 0px;
+}
+
+/*-----dashboard-----*/
+
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    margin-bottom: 100px;
+}
+
+h1{
+    line-height: 1.4;
+}
+
+.korean-comment{
+    font-family: Pretendard, sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.highlight-type2{
+    background-color: #7774FF;
+    color: #FEFEFF;
+}
+
+.highlight-type2:hover{
+    background-color: transparent;
+    color: #7774FF;
+    transition: 0.3s;
+}
+
+.highlight-type1{
+    color: #7774FF;
+}
+
+.highlight-type1:hover{
+    background-color: #7774FF;
+    color: #FEFEFF;
+    transition: 0.3s;
+}
+
+.english-comment{
+    font-family: "Pretendard", sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: -0.3px;
+    color: black;
+    margin-top: 20px;
+}
+
+/*-----recent works-----*/
+
+.recent-menu{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #B0B0B5;
+    text-align: right;
+    margin-top: 200px;
+    width: 100%;
+    border-top: 1.5px solid #B0B0B5;
+    line-height: 12;
+    
+}
+
+.recent-works{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+.article{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.recent-works .article .portfolio-img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    filter: grayscale(100%) blur(0px) opacity(60%);
+    transition: filter 0.3s ease;
+    margin-left: 14px;
+    margin-right: 14px;
+    border-radius: 8px;
+}
+
+.recent-works .article .portfolio-img:hover {
+    filter: grayscale(0%) blur(0px) opacity(100%);
+}
+/*-----footer-----*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contact{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-family: 700;
+    color: black;
+    margin-bottom: 28px;
+}
+
+.designer-menu>a{
+    font-family: "Pretendard", sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+}
+
+.footer>p{
+    font-family: "Pretendard", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 28px;
+}
+
+/*-----INFO Section-----*/
+
+/*-----progile-section-----*/
+
+.profile-menu{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    margin-top: 180px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.profile-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 180px;
+}
+
+#profile-picture{
+    width: 1000px;
+    filter: grayscale(70%);
+    margin-right: 60px;
+    border-radius: 12px;
+}
+
+.introdution>h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #7774FF;
+    
+}
+
+.introdution>p{
+    font-family: "Pretendard", sans-serif;
+    line-height: 1.6;
+}
+
+.my-profile{
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.my-introduction{
+    margin-bottom: 28px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.my-tools{
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 14px;
+    
+}
+
+/*-----value-cection-----*/
+
+/*.value-menu{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.value-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+
+.value{
+    display: flex;
+    margin-left: 76px;
+    margin-right: 76px;
+    justify-content: center;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.value-icon{
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    border: 1px solid #B0B0B5;
+    border-radius: 100px;
+}
+
+.value-intro{
+    margin-left: 30px;
+}
+
+.value-name{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.value-exp{
+    font-family: "Pretendard", sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.5;
+}*/
+
+/*-----WORK Section-----*/
+
+.work-comment{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    margin-top: 180px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/*-----portfolio-menu-----*/
+
+.portfolio-menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+.pf-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.portfolio-menu .pf-section .portfolio-img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    filter: grayscale(100%) blur(0px) opacity(60%);
+    transition: filter 0.3s ease;
+    margin-bottom: 24px;
+    margin-top: 0px;
+    border-radius: 8px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.portfolio-menu .pf-section .portfolio-img:hover {
+    filter: grayscale(0%) blur(0px) opacity(100%);
+}
+
+/*.portfolio-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pf-section{
+    margin-left: 12px;
+    margin-right: 12px;
+}*/
+
+/*-----visual_pp-----*/
+
+.v-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 180px auto 60px;
+    width: 100%;
+    gap: 12px;
+}
+.v-img>img{
+    max-width: 100%;
+    width: 1200px;
+    height: auto;
+}
+
+/*-----uxui_pp-----*/
+
+.u-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 180px auto 60px;
+    width: 100%;
+    gap: 12px;
+}
+.u-img>img{
+    max-width: 100%;
+    width: 1200px;
+    height: auto;
+}
+
+/*-----logo_pp-----*/
+
+.l-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 180px auto 60px;
+    width: 100%;
+    gap: 12px;
+}
+.l-img>img{
+    max-width: 100%;
+    width: 1200px;
+    height: auto;
+}
+
+/*-----graphic_pp-----*/
+
+.g-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 180px auto 60px;
+    width: 100%;
+    gap: 12px;
+}
+.g-img>img{
+    max-width: 100%;
+    width: 1200px;
+    height: auto;
+}
+
+
+/*-----drawing_pp-----*/
+
+.d-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 180px auto 60px;
+    width: 100%;
+    gap: 12px;
+}
+.d-img>img{
+    max-width: 100%;
+    width: 1200px;
+    height: auto;
+}
+
+
+
